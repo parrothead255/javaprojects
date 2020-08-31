@@ -16,5 +16,6 @@ public class Lab02v100 {
 		System.out.println("# #   # #   #   ##### #   # # # # #   #   #####");
 		System.out.println("# #   # #   #   #     #   # # #  ##   #       #");
 		System.out.println("# ##### #####   #     ##### # #   #   #   #####");
+		
 	}
 }
