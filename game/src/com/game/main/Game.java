@@ -18,14 +18,15 @@ public class Game extends Canvas implements Runnable {
 	private Handler handler;
 	
 	public Game(){
+		handler = new Handler();
+		this.addKeyListener(new KeyInput(handler));
+		
 		new Window (WIDTH, HEIGHT, "Lets build a game", this);
 		
-		handler = new Handler();
 		r = new Random();
 		
-		for(int i = 0; i < 10; i++) {
-			handler.addObject(new Player(r.nextInt(WIDTH), r.nextInt(HEIGHT), ID.Player));
-		}
+		handler.addObject(new Player(WIDTH/2-32, HEIGHT/2-32, ID.Player));
+		handler.addObject(new BasicEnemy(WIDTH/2+64, HEIGHT/2+64, ID.BasicEnemy));
 		
 	}
 	
@@ -82,12 +83,12 @@ public class Game extends Canvas implements Runnable {
 	private void render() {
 		BufferStrategy bs = this.getBufferStrategy();
 		if (bs == null) {
-			this.createBufferStrategy(2);
+			this.createBufferStrategy(3);
 			return;
 		}
 		Graphics g = bs.getDrawGraphics();
 		
-		g.setColor(Color.red);
+		g.setColor(Color.white);
 		g.fillRect(0, 0, WIDTH, HEIGHT);
 		
 		handler.render(g);
