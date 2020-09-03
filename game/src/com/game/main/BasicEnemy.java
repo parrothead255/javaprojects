@@ -8,7 +8,7 @@ public class BasicEnemy extends GameObject {
 	public BasicEnemy(int x, int y, ID id) {
 		super(x, y, id);
 
-		velY = 5;
+		velY = 4;
 		
 	}
 
