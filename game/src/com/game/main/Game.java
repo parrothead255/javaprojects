@@ -70,7 +70,7 @@ public class Game extends Canvas implements Runnable {
 					
 				}
 			}
-			
+			stop();
 		}
 	
 	private void tick() {
