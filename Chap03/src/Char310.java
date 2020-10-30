@@ -5,7 +5,7 @@ public class Char310 {
 		final int maxPlayers=5;
 		System.out.println(maxPlayers);
 		final String max = ("Max");
-		
+		System.out.println(max);
 	}
 
 }
