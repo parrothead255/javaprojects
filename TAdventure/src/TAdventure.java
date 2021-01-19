@@ -52,8 +52,6 @@ public class TAdventure
 		startButton = new JButton("START");
 		startButton.setBackground(Color.white);
 		startButton.setForeground(Color.black);
-		//startButton.setBorderPainted(true);	
-		//startButton.setFocusPainted(true);
 		startButton.setFont(normalFont);
 		
 		titleNamePanel.add(titleNameLabel);
