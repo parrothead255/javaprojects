@@ -30,8 +30,8 @@ public class Card {
 	public String toString() {
 		return rank+" of "+suit;
 	}
-	public boolean equals(Card c) {
-		if(points==c.getPoints())
+	public boolean equals(Object c) {
+		if(points==((Card)c).getPoints())
 			return true;
 		return false;
 	}
