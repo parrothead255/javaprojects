@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import Chap10Lab.Untilty;
+
 public class MagpieRunner {
 
 	public static void main(String[] args) {

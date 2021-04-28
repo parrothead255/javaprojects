@@ -12,6 +12,7 @@ public class Chap11LabA
 {
 	public static void main(String[] args)
 	{
+		System.out.println("ENTER A NUMBER");
 		// This main method needs additions for the 100 point version.
 		Scanner input = new Scanner(System.in);
 		final int MAX = input.nextInt();

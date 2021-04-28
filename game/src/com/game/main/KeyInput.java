@@ -47,7 +47,8 @@ public class KeyInput extends KeyAdapter {
 	
 		}
 
+
 	
-	}
-}
+	}}
+
 //if(key == KeyEvent.VK_UP) tempObject.setY(tempObject.getY() - 1);
